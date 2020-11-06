@@ -1,0 +1,98 @@
+/* Roboto Font */
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/* border: 1px solid white; */
+}
+
+body {
+	background: #222222;
+	font-family: "Roboto", sans-serif;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+section.problem {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.equation {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+input {
+	border: 0;
+	outline: 0;
+	cursor: default;
+}
+input:focus {
+	outline: none !important;
+}
+
+input#num1,
+input#num2 {
+	text-align: center;
+	/* padding: 10px; */
+	width: 60px;
+	background: transparent;
+	border: none;
+	font-size: 3rem;
+	color: white;
+}
+
+.answer-holder input#answer[type="number"] {
+	background: transparent;
+	border: none;
+	border-bottom: 3px solid #ccc;
+	margin: 30px;
+	padding: 5px 0;
+	font-size: 3em;
+	text-align: center;
+	width: 180px;
+	color: white;
+}
+
+textarea,
+select,
+input,
+button {
+	outline: none;
+}
+
+.answer::-webkit-inner-spin-button,
+.answer::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+button {
+	padding: 10px 10px;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	background: #079992;
+	color: white;
+	border: none;
+}
+
+.green {
+	color: greenyellow;
+}
+
+.red {
+	color: red;
+}

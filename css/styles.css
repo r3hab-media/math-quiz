@@ -1,0 +1,190 @@
+/* Import Roboto Font */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background: #82ccdd; */
+  background: #333333;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* navigation */
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navigation {
+  /* background-color: #0c0c0c; */
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 3px;
+}
+
+.navigation a {
+  display: block;
+  padding: .3em 1em;
+  color: white;
+  font-weight: 300;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.navigation a:hover,
+.navigation a:active {
+  background-color: lightslategray;
+}
+
+
+/* main content */
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+section h1 {
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px white;
+  font-weight: 300;
+  /* animation: zooms 1s linear infinite; */
+  /* animation-direction: alternate; */
+}
+
+/* @keyframes zooms {
+  from {
+    transform: translateX(-20px);
+  }
+  to {
+    transform: translateX(20px);
+  }
+} */
+
+.centerdiv {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.insert-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+input#v1, input#v2 {
+  text-align: center;
+  /* padding: 10px; */
+  width: 60px;
+  background: none;
+  border: none;
+  font-size: 3rem;
+  color: white;
+}
+
+.box1 p {
+  margin: 0 8px 0 13px;
+  font-size: 60px;
+}
+
+/* middle box */
+
+.middle-box input#answer {
+  background: none;
+  border: none;
+  border-bottom: 3px solid #ccc;
+  margin: 30px;
+  padding: 5px 0;
+  font-size: 3em;
+  text-align: center;
+  width: 180px;
+  color: white;
+}
+
+textarea, select, input, button {
+  outline: none;
+}
+
+.answer::-webkit-inner-spin-button, .answer::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Send Button */
+
+.btn, .sentbox button {
+  padding: 10px 10px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background: #079992;
+  color: white;
+  border: none;
+}
+
+p.correct {
+  display: block;
+  font-size: 2em; 
+  color: greenyellow;
+}
+
+p.inCorrect {
+  display: block;
+  font-size: 2em;
+  color: rgb(255, 38, 0);
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+    border-radius: 3px;
+  }
+  
+  .navigation a {
+    padding: .3em 1em;
+  }
+
+  .navigation a:hover,
+  .navigation a:active {
+    background-color: lightslategray;
+  }
+}
+@media all and (max-width: 500px) {
+  .navigation {
+    padding: 0;
+    border-radius: 3px;
+  }
+
+  .navigation a {
+    text-align: center;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .navigation a:hover,
+  .navigation a:active {
+    background-color: lightslategray;
+  }  
+}

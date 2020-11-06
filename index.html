@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Quiz | Addition</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <nav>
+    <ul class="navigation">
+      <li><a href="#">+</a></li>
+      <li><a href="#">-</a></li>
+      <li><a href="#">x</a></li>
+      <li><a href="#">÷</a></li>
+    </ul>  
+  </nav>
+  <section>
+    <h1>Addition</h1>
+    <form>
+      <div class="centerdiv">
+        <div class="insert-box">
+          <div class="box1">
+            <input type="text" id="v1">
+          </div>
+          <div class="box1">
+            <p>+</p>
+          </div>
+          <div class="box1">
+            <input type="text" id="v2">
+          </div>
+        </div>
+        <div class="middle-box">
+          <input type="number" class="answer" id="answer" autofocus="true" autocomplete="off">
+        </div>
+        <div class="sentbox">
+          <button onclick="jsGame()">Check</button>
+        </div>
+      </div>      
+    </form>
+    <p id="correct" class="correct"></p>
+    <p id="inCorrect" class="inCorrect"></p>
+  </section>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
