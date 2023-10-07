@@ -1,6 +1,7 @@
 /* Import Roboto Font */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -41,6 +42,19 @@ a {
   font-weight: 300;
   font-size: 2rem;
   text-decoration: none;
+  border-radius: 0;
+
+  transition-duration: 250ms;
+}
+
+.navigation>li:first-child>a {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.navigation>li:last-child>a {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 3px;
 }
 
 .navigation a:hover,
@@ -51,7 +65,7 @@ a {
 
 /* main content */
 section {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,15 +82,6 @@ section h1 {
   /* animation: zooms 1s linear infinite; */
   /* animation-direction: alternate; */
 }
-
-/* @keyframes zooms {
-  from {
-    transform: translateX(-20px);
-  }
-  to {
-    transform: translateX(20px);
-  }
-} */
 
 .centerdiv {
   width: 500px;
@@ -95,7 +100,8 @@ section h1 {
   height: 100px;
 }
 
-input#v1, input#v2 {
+input#v1,
+input#v2 {
   text-align: center;
   /* padding: 10px; */
   width: 60px;
@@ -124,18 +130,23 @@ input#v1, input#v2 {
   color: white;
 }
 
-textarea, select, input, button {
+textarea,
+select,
+input,
+button {
   outline: none;
 }
 
-.answer::-webkit-inner-spin-button, .answer::-webkit-outer-spin-button {
+.answer::-webkit-inner-spin-button,
+.answer::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
 /* Send Button */
 
-.btn, .sentbox button {
+.btn,
+.sentbox button {
   padding: 10px 10px;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -146,7 +157,7 @@ textarea, select, input, button {
 
 p.correct {
   display: block;
-  font-size: 2em; 
+  font-size: 2em;
   color: greenyellow;
 }
 
@@ -161,7 +172,7 @@ p.inCorrect {
     justify-content: space-around;
     border-radius: 3px;
   }
-  
+
   .navigation a {
     padding: .3em 1em;
   }
@@ -171,6 +182,7 @@ p.inCorrect {
     background-color: lightslategray;
   }
 }
+
 @media all and (max-width: 500px) {
   .navigation {
     padding: 0;
@@ -186,5 +198,5 @@ p.inCorrect {
   .navigation a:hover,
   .navigation a:active {
     background-color: lightslategray;
-  }  
+  }
 }
