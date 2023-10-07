@@ -41,6 +41,18 @@ a {
   font-weight: 300;
   font-size: 2rem;
   text-decoration: none;
+  border-radius: 0;
+
+  transition-duration: 250ms;
+}
+
+.navigation>li:first-child>a {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.navigation>li:last-child>a {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 3px;
 }
 
 .navigation a:hover,
@@ -51,7 +63,7 @@ a {
 
 /* main content */
 section {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,15 +80,6 @@ section h1 {
   /* animation: zooms 1s linear infinite; */
   /* animation-direction: alternate; */
 }
-
-/* @keyframes zooms {
-  from {
-    transform: translateX(-20px);
-  }
-  to {
-    transform: translateX(20px);
-  }
-} */
 
 .centerdiv {
   width: 500px;
