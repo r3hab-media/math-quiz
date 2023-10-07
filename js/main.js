@@ -55,7 +55,7 @@ const switchGamemode = newGamemode => {
 
 	gamemode = newGamemode;
 	createAnswer(gamemode);
-	const gmAsTitleCase = gamemode.charAt(0).toUpperCase() + 
+	const gmAsTitleCase = gamemode.charAt(0).toUpperCase() +
 		gamemode.substring(1).toLowerCase();
 
 	window.title = "Math Quiz | " + gmAsTitleCase;
